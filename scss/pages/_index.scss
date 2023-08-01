@@ -1,0 +1,272 @@
+  /*網站樣式*/
+
+
+.header{
+  background: #AA0601;
+  padding: 25px 36px;
+  .container{
+    padding: 12px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  .menu{
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 64px; 
+  }
+  img{
+    width: 80px;
+  }
+  .menu a:hover{
+    color:#FBF2F2;
+    border-bottom:1px solid;
+  }
+}
+
+
+
+.banner{
+  width: 100%;
+  background-image: url(../image/home-header.png) ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 296px 0;
+
+  .bn-text{
+    text-align: right;
+  }
+  p{
+    font-size: 36px;
+    color: #650300;
+  }
+  a{
+    background: #AA0601;
+    padding: 6px 12px;
+    margin: 4px;
+    &:hover{
+      background: #fff;
+      color: #aa0601;;
+    }
+  }
+}
+
+.feature{
+  background: #FBF2F2;
+  .card{
+    max-width: 306px;
+    margin: 0 auto;
+  }
+  .icon{
+    width: 100px;
+    margin: auto;
+    margin-bottom: 16px;
+  }
+
+}
+
+.classic-series{
+  .card{
+    width: 30%;
+  }
+}
+
+.co-branding{
+  background-image: url(../image/index-bg.png);
+  h2{
+    color:#fff;
+    }
+  .card-list{
+    gap: 0px;
+  }
+}
+
+.customer-rec{
+  .card{
+    max-width: 306px;
+    max-height: 511px;
+    box-shadow: 0px 2px 6px #00000029;
+    border: 1px solid #DEE2E6;
+    border-radius: 4px;
+    overflow: cover;
+    position: relative;
+    flex-grow: 1;
+  }
+  .card-text{
+    padding: 16px;
+    margin-bottom: 72px;
+    flex-grow: 1;
+    .name{
+      margin-bottom: 8px;
+    }
+  }
+  .date{
+    color:#707070;
+    font-size: 14px;
+    margin-bottom: 0 auto;
+    position: absolute;
+    left: 16px;
+    bottom: 16px;
+  }
+
+}
+
+.contract{
+  background:  #FBF2F2;
+  .wrap{
+    max-width: 636px;
+    margin: 0 auto;
+  }
+  .contract-text{
+    font-size: 20px;
+    margin-bottom: 24px;
+  }
+
+  li {
+    text-align: left;
+    margin-bottom: 16px;
+  }
+  
+  label{
+    margin-bottom: 8px;
+  }
+
+
+  input{
+    background:none; //預設白底背景取消
+    outline:none; //點選時出現的藍色外框線
+    border: 1px solid #000;
+    width: 100%;
+    padding: 6px 12px;
+  }
+
+  input[type="submit"]{
+    max-width: 416px;
+    background: #AA0601;
+    color: #fff;
+    font-weight: bold;
+    border: 0px;
+    padding: 16px 0;
+    &:hover{
+      opacity: 0.9;
+    }
+  }
+  .agree{
+    margin-bottom: 48px;
+    display: flex;
+    input[type="checkbox"]{
+        width: 5%;
+    }
+
+  }
+
+}
+
+.footer{
+  background: #AA0601;
+  color: #fff;
+  padding: 60px 0 32px 0;
+  .navbar, .menu, .icon, .copyright{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar{
+    margin-bottom: 60px;
+  }
+  .menu{
+    gap: 48px;
+  }
+  .icon{
+    gap: 32px;
+    img{
+      max-width: 48px;
+    }
+  }
+  span {
+    filter: brightness(100);
+  }
+  .tel, .mail{
+    font-size: 36px;
+  }
+  .tel{
+    margin-bottom: 8px;
+  } 
+  .copyright{
+    padding-top: 24px;
+    border-top: 1px solid #fff;
+    margin-top: 32px;
+    .mr-48{
+      margin-right: 48px;
+    }
+  }
+
+}
+
+
+.feature, .classic-series, .co-branding, .customer-rec, .contract{
+  text-align: center;
+  padding: 80px 0;
+  p {
+    text-align: left;
+
+  }
+}
+
+
+//RWD//
+@media(max-width:992px){
+  .card-list{
+    width: 100%;
+    flex-wrap: wrap;
+   }
+  .classic-series, .co-branding{
+    .card-list{
+      flex-direction: column;
+    }
+  }
+  .classic-series{
+    .card-list{
+      align-items: center;
+      .card{
+        width: 336px;
+      }
+    }
+
+  }
+  .co-branding{
+    .card{
+      margin-bottom: 24px;
+    }
+  }
+  .customer-rec{
+    flex-wrap: wrap;
+    .card{
+      max-width: 47%;
+    }
+  }
+  .contract{
+    .wrap{
+      padding: 0 60px;
+      .contract-text{
+        font-size: 16px;
+      }
+    }
+    input[type="submit"]{
+      max-width: 100%;
+    }
+    
+  }
+  .footer{
+    .menu{
+      gap: 48px;
+    }
+    .icon{
+      img: 40px;
+      gap: 16px;
+    }
+  }
+}
+
+
