@@ -188,7 +188,7 @@ h4 {
 }
 .header .menu a:hover {
   color: #FBF2F2;
-  border-bottom: 1px solid;
+  text-decoration: underline;
 }
 @media (max-width: 767px) {
   .header .menu a:hover {
@@ -453,8 +453,17 @@ h4 {
   border-top: 1px solid #fff;
   margin-top: 32px;
 }
+.footer .copyright a {
+  display: block;
+}
+.footer .copyright a:hover {
+  text-decoration: underline;
+}
 .footer .copyright .mr-48 {
   margin-right: 48px;
+}
+.footer .copyright .mb-8 {
+  margin-bottom: 8px;
 }
 @media (max-width: 767px) {
   .footer .copyright {

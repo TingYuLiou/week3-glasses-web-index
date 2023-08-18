@@ -43,7 +43,7 @@
     padding: 12px 0;
     &:hover{
       color:#FBF2F2;
-      border-bottom:1px solid;
+      text-decoration: underline;
       @media (max-width:767px){
       color: #AA0601;
       background: #fff;
@@ -294,8 +294,17 @@
     padding-top: 24px;
     border-top: 1px solid #fff;
     margin-top: 32px;
+    a{
+      display: block;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
     .mr-48{
       margin-right: 48px;
+    }
+    .mb-8{
+      margin-bottom: 8px;
     }
     @media(max-width: 767px){
       display: block;
